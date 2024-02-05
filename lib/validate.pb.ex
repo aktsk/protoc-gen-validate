@@ -1,6 +1,7 @@
 defmodule Validate.KnownRegex do
   @moduledoc false
-  use Protobuf, enum: true, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, enum: true, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :UNKNOWN, 0
   field :HTTP_HEADER_NAME, 1
@@ -9,7 +10,8 @@ end
 
 defmodule Validate.FieldRules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   oneof :type, 0
 
@@ -39,7 +41,8 @@ end
 
 defmodule Validate.FloatRules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :float
   field :lt, 2, optional: true, type: :float
@@ -53,7 +56,8 @@ end
 
 defmodule Validate.DoubleRules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :double
   field :lt, 2, optional: true, type: :double
@@ -67,7 +71,8 @@ end
 
 defmodule Validate.Int32Rules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :int32
   field :lt, 2, optional: true, type: :int32
@@ -81,7 +86,8 @@ end
 
 defmodule Validate.Int64Rules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :int64
   field :lt, 2, optional: true, type: :int64
@@ -95,7 +101,8 @@ end
 
 defmodule Validate.UInt32Rules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :uint32
   field :lt, 2, optional: true, type: :uint32
@@ -109,7 +116,8 @@ end
 
 defmodule Validate.UInt64Rules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :uint64
   field :lt, 2, optional: true, type: :uint64
@@ -123,7 +131,8 @@ end
 
 defmodule Validate.SInt32Rules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :sint32
   field :lt, 2, optional: true, type: :sint32
@@ -137,7 +146,8 @@ end
 
 defmodule Validate.SInt64Rules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :sint64
   field :lt, 2, optional: true, type: :sint64
@@ -151,7 +161,8 @@ end
 
 defmodule Validate.Fixed32Rules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :fixed32
   field :lt, 2, optional: true, type: :fixed32
@@ -165,7 +176,8 @@ end
 
 defmodule Validate.Fixed64Rules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :fixed64
   field :lt, 2, optional: true, type: :fixed64
@@ -179,7 +191,8 @@ end
 
 defmodule Validate.SFixed32Rules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :sfixed32
   field :lt, 2, optional: true, type: :sfixed32
@@ -193,7 +206,8 @@ end
 
 defmodule Validate.SFixed64Rules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :sfixed64
   field :lt, 2, optional: true, type: :sfixed64
@@ -207,14 +221,16 @@ end
 
 defmodule Validate.BoolRules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :bool
 end
 
 defmodule Validate.StringRules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   oneof :well_known, 0
 
@@ -248,7 +264,8 @@ end
 
 defmodule Validate.BytesRules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   oneof :well_known, 0
 
@@ -270,7 +287,8 @@ end
 
 defmodule Validate.EnumRules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :const, 1, optional: true, type: :int32
   field :defined_only, 2, optional: true, type: :bool
@@ -280,7 +298,8 @@ end
 
 defmodule Validate.MessageRules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :skip, 1, optional: true, type: :bool
   field :required, 2, optional: true, type: :bool
@@ -288,7 +307,8 @@ end
 
 defmodule Validate.RepeatedRules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :min_items, 1, optional: true, type: :uint64
   field :max_items, 2, optional: true, type: :uint64
@@ -299,7 +319,8 @@ end
 
 defmodule Validate.MapRules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :min_pairs, 1, optional: true, type: :uint64
   field :max_pairs, 2, optional: true, type: :uint64
@@ -311,7 +332,8 @@ end
 
 defmodule Validate.AnyRules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :required, 1, optional: true, type: :bool
   field :in, 2, repeated: true, type: :string
@@ -320,7 +342,8 @@ end
 
 defmodule Validate.DurationRules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :required, 1, optional: true, type: :bool
   field :const, 2, optional: true, type: Google.Protobuf.Duration
@@ -334,7 +357,8 @@ end
 
 defmodule Validate.TimestampRules do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
+
+  use Protobuf, syntax: :proto2, protoc_gen_elixir_version: "0.12.0"
 
   field :required, 1, optional: true, type: :bool
   field :const, 2, optional: true, type: Google.Protobuf.Timestamp
@@ -345,17 +369,4 @@ defmodule Validate.TimestampRules do
   field :lt_now, 7, optional: true, type: :bool
   field :gt_now, 8, optional: true, type: :bool
   field :within, 9, optional: true, type: Google.Protobuf.Duration
-end
-
-defmodule Validate.PbExtension do
-  @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto2
-
-  extend Google.Protobuf.MessageOptions, :disabled, 1071, optional: true, type: :bool
-
-  extend Google.Protobuf.MessageOptions, :ignored, 1072, optional: true, type: :bool
-
-  extend Google.Protobuf.OneofOptions, :required, 1071, optional: true, type: :bool
-
-  extend Google.Protobuf.FieldOptions, :rules, 1071, optional: true, type: Validate.FieldRules
 end

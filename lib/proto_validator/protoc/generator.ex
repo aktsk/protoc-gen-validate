@@ -12,7 +12,7 @@ defmodule ProtoValidator.Protoc.Generator do
         nil
 
       content ->
-        CodeGeneratorResponse.File.new(name: name, content: content)
+        %CodeGeneratorResponse.File{name: name, content: content}
     end
   end
 
