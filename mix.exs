@@ -31,7 +31,7 @@ defmodule ProtoValidator.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:protobuf, "~> 0.12.0"},
+      {:protobuf, github: "elixir-protobuf/protobuf"},
       {:vex, "~> 0.9.0"},
       {:protoc_gen_validate,
        github: "bufbuild/protoc-gen-validate", branch: "main", app: false, compile: false}
