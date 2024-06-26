@@ -16,7 +16,7 @@ defmodule ProtoValidator.Protoc.CLI do
     :io.setopts(:standard_io, encoding: :latin1)
     Protobuf.load_extensions()
 
-    bin = IO.binread(:all)
+    bin = IO.binread(:eof)
     request = Protobuf.Decoder.decode(bin, Google.Protobuf.Compiler.CodeGeneratorRequest)
 
     ctx =
