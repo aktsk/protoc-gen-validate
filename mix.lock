@@ -1,5 +1,5 @@
 %{
-  "protobuf": {:git, "https://github.com/elixir-protobuf/protobuf.git", "e122483d2fa31a0588387996c86c691bfc6145b5", []},
-  "protoc_gen_validate": {:git, "https://github.com/bufbuild/protoc-gen-validate.git", "ca115cfd131364a094044faab592858151fd291c", [branch: "main"]},
+  "protobuf": {:git, "https://github.com/elixir-protobuf/protobuf.git", "e0920e326f192535bf4e44b526aa07cbcef90efc", []},
+  "protoc_gen_validate": {:git, "https://github.com/bufbuild/protoc-gen-validate.git", "9c5640de37137e3d2b1ccb1322b8a816fc376323", [branch: "main"]},
   "vex": {:hex, :vex, "0.9.2", "fe061acc9e0907d983d46b51bf35d58176f0fe6eb7ba3b33c9336401bf42b6d1", [:mix], [], "hexpm", "76e709a9762e98c6b462dfce92e9b5dfbf712839227f2da8add6dd11549b12cb"},
 }
